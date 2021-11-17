@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Calculadora de Calorías</title>
+</head>
+<body>
+<div class="calculadora">
+	<center><h1 id="main-t">Inserta tus Datos</h1></center>
+	<div class="datos">
+		<div class="seccion1">
+			<form>
+		<label> Edad:</label>
+		<input type="number" id="edad" name="edad" placeholder="Escribe tu edad" min="1">
+
+		<label> Estatura (en cm):</label>
+		<input type="number" id="estatura" name="estatura" placeholder="Tu estatura (en cm)" min="1">
+
+		<label> Peso (en kg):</label>
+		<input type="number" id="peso" name="peso" placeholder="Peso (en kg)" min="1">
+
+		<label> Sexo:</label>
+		<select name="sexo" id="sexo">
+  <optgroup label="Seleccione su género">
+  	<option hidden disabled selected value>-- Selecciona un género --</option>
+    <option value="Masculino">Masculino</option>
+    <option value="Femenino">Femenino</option>
+  </optgroup>
+</select>	
+</form>
+		</div>
+		<div class="seccion1">
+			<img src="img/hamburguesa.png">
+		</div>
+</div>
+
+<div class="actividades">
+	<center><h1 id="t_2">Ahora dinos, ¿Cuál es tu nivel de actividad?</h1></center>
+     
+     <div class="seccion2">
+	<input type="radio" id="Sedentario"
+     name="actividades" value="Sedentario" checked>
+    <label for="Sedentario">Sedentario</label>
+     </div>
+
+    <div class="seccion2">
+    <input type="radio" id="PocoActivo"
+     name="actividades" value="PocoActivo">
+    <label for="PocoActivo">Poco Activo</label>
+     </div>
+
+     <div class="seccion2">
+    <input type="radio" id="ModeradamenteActivo"
+     name="actividades" value="ModeradamenteActivo">
+    <label for="ModeradamenteActivo">Moderadamente Activo</label>
+     </div>
+
+     <div class="seccion2">
+    <input type="radio" id="MuyActivo"
+     name="actividades" value="MuyActivo">
+    <label for="MuyActivo">Muy Activo</label>
+     </div>
+
+     <div class="seccion2">
+    <input type="radio" id="ExtremadamenteActivo"
+     name="actividades" value="ExtremadamenteActivo">
+    <label for="ExtremadamenteActivo">Extremadamente Activo</label>
+    </div>
+    <center><a href="#resultado"><button onclick="actividad();">Calcular</button></a></center>
+</div>
+
+	<div class="resultado" id="resultado">
+		<center><h1>Tus resultados son:</h1></center>
+		<div class="objetivos">
+			<div class="seccion3">
+			 <h1> Para bajar de peso (medio kilo por semana): <span id="deficit"></span> kcal.</h1>
+			</div>
+			<div class="seccion3">
+			 <h1> Para mantener tu peso actual: <span id="mantenimiento"></span> kcal.</h1>
+			</div>
+			<div class="seccion3">
+				<h1> Para subir de peso (medio kilo por semana): <span id="superavit"></span> kcal.</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

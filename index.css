@@ -1,0 +1,149 @@
+@font-face{
+	src:url(fonts/Fenix.ttf);
+	font-family: Fenix;
+} 
+
+*{
+	margin:0;
+	padding:0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+h1{
+	font-family: Fenix;
+}
+
+.calculadora{
+	padding-top: 2%;
+}
+
+#main-t{
+	font-size: 45px;
+	padding-bottom: 2%;
+}
+
+.seccion1{
+position: relative; left: 0px; top:0px;
+  float: left;
+  width:50%;
+}
+
+.seccion1 label{
+font-family: Fenix;
+font-size: 30px;
+display: block;
+margin-bottom: 5px;
+}
+
+.seccion1 input{
+font-size: 20px;
+display: block;
+padding: 1%;
+margin-bottom: 10px;
+
+}
+
+.seccion1 select{
+font-size: 20px;
+display: block;
+padding: 0.8%;
+margin-bottom: 10px;
+}
+
+.seccion1 form{
+margin-left: 5%;
+}
+
+.seccion1 img{
+	height: 270px;
+	width: 350px;
+}
+
+.datos:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*--*/
+
+#t_2{
+	padding-top: 2%;
+	font-family: Fenix;
+	font-size: 45px;
+	padding-bottom: 2%;
+}
+
+.actividades:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.seccion2{
+position: relative; left: 0px; top:0px;
+  float: left;
+  width:20%;
+  text-align: center;
+}
+
+.resultado{
+	padding-top: 2%;
+	display: none;
+	transition: all 0.5s ease-in-out;
+}
+
+.actividades button{
+	font-family: Fenix;
+	background: white;
+	font-size: 20px;
+	border: 2px solid #54E830;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-radius: 15px;
+	transition: all 0.5s ease-in-out;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.actividades button:hover{
+	color: white;
+	background: #54E830;
+	transition: all 0.5s ease-in-out;
+}
+
+.resultado h1{
+	padding-top: 3%;
+	font-size: 45px;
+	font-family: Fenix;
+	padding-bottom: 2%;
+}
+
+/*--*/
+
+.seccion3 h1{
+font-size: 16px;
+}
+
+.objetivos:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.seccion3{
+position: relative; left: 0px; top:0px;
+  float: left;
+  width:30.3%;
+  text-align: center;
+  border: 2px solid #54E830;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5%;
+}
