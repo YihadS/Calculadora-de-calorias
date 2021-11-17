@@ -23,9 +23,10 @@ var calorias = 0;
 sexo.onchange = Calcular;
   
   function Calcular(){
+    bmr=0;
   var valor = this.value
     console.log(valor);
-    
+
     if (valor == "Masculino"){
     	 bmr = 88.362 + (13.397 * peso.value) + (4.799 * estatura.value) - (5.677 * edad.value);
     }
@@ -44,6 +45,7 @@ sexo.onchange = Calcular;
       mantenimiento.innerHTML = parseInt(calorias);
       superavit.innerHTML = parseInt(calorias) + 500;
       resultado.style.display="block";
+      document.getElementById('sexo').value= "dis";
   	}
 
   	else if (pocoActivo.checked){
@@ -52,6 +54,7 @@ sexo.onchange = Calcular;
       mantenimiento.innerHTML = parseInt(calorias);
       superavit.innerHTML = parseInt(calorias) + 500;
       resultado.style.display="block";
+      document.getElementById('sexo').value= "dis";
   }
 
   	else if (moderadamenteActivo.checked){
@@ -60,6 +63,7 @@ sexo.onchange = Calcular;
       mantenimiento.innerHTML = parseInt(calorias);
       superavit.innerHTML = parseInt(calorias) + 500;
       resultado.style.display="block";
+      document.getElementById('sexo').value= "dis";
   }
 
   else if (muyActivo .checked){
@@ -68,6 +72,7 @@ sexo.onchange = Calcular;
       mantenimiento.innerHTML = parseInt(calorias);
       superavit.innerHTML = parseInt(calorias) + 500;
       resultado.style.display="block";
+      document.getElementById('sexo').value= "dis";
   }
 
     else if (extremadamenteActivo .checked){
@@ -76,5 +81,6 @@ sexo.onchange = Calcular;
       mantenimiento.innerHTML = parseInt(calorias);
       superavit.innerHTML = parseInt(calorias) + 500;
        resultado.style.display="block";
+       document.getElementById('sexo').value= "dis";
   }
   	}
