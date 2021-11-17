@@ -13,18 +13,18 @@
 		<div class="seccion1">
 			<form>
 		<label> Edad:</label>
-		<input type="number" id="edad" name="edad" placeholder="Escribe tu edad" min="1">
+		<input type="number" id="edad" name="edad" placeholder="Escribe tu edad" min="1" onChange="Calcular();">
 
 		<label> Estatura (en cm):</label>
-		<input type="number" id="estatura" name="estatura" placeholder="Tu estatura (en cm)" min="1">
+		<input type="number" id="estatura" name="estatura" placeholder="Tu estatura (en cm)" min="1" onChange="Calcular();">
 
 		<label> Peso (en kg):</label>
-		<input type="number" id="peso" name="peso" placeholder="Peso (en kg)" min="1">
+		<input type="number" id="peso" name="peso" placeholder="Peso (en kg)" min="1" onChange="Calcular();">
 
 		<label> Sexo:</label>
 		<select name="sexo" id="sexo">
   <optgroup label="Seleccione su género">
-  	<option hidden disabled selected value>-- Selecciona un género --</option>
+  	<option value="dis" hidden disabled selected value>-- Selecciona un género --</option>
     <option value="Masculino">Masculino</option>
     <option value="Femenino">Femenino</option>
   </optgroup>
